@@ -1,0 +1,126 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container-avaliacao,
+.container-obrigado {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 350px;
+    padding: 30px;
+    width: 400px;
+}
+
+.icone-estrela {
+    background-color: hsl(213, 19%, 25%);
+    border-radius: 50%;
+    height: 16px;
+    padding: 15px;
+    width: 17px;
+}
+
+.titulo {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: hsl(216, 12%, 54%);
+    line-height: 1.5rem;
+}
+
+.botoes-nota {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nota {
+    background-color: hsl(213, 19%, 25%);
+    border: none;
+    border-radius: 50%;
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    padding: 15px 20px;
+}
+
+.nota:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.enviar {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+.enviar:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 0.5s;
+}
+
+.container-obrigado {
+    align-items: center;
+    display: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.obrigado img {
+    height: 108px;
+    width: 162px;
+}
+
+.obrigado h3 {
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 15px;
+    color: hsl(25, 97%, 53%);
+    padding: 5px 15px;
+}
+
+.obrigado h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.obrigado p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5rem;
+}
+
+.ativo {
+    display: flex;
+    transition: 0.2s;
+}
+
+.inativo {
+    display: none;
+}
+
+.selecionado {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}

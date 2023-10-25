@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Componente de Classificação</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-avaliacao avaliacao" id="avaliacao">
+            <img class="icone-estrela" src="./images/icon-star.svg" alt="Ícone de estrela">
+            <div>
+                <h2 class="titulo">Como nos saímos?</h2>
+                <p class="descricao">Por favor, nos informe como foi nossa assistência com sua solicitação. Todo feedback é apreciado para nos ajudar a melhorar nossos serviços!</p>
+            </div>
+            <ul class="botoes-nota">
+                <li><button class="nota" data-nota="1" type="button">1</button></li>
+                <li><button class="nota" data-nota="2" type="button">2</button></li>
+                <li><button class="nota" data-nota="3" type="button">3</button></li>
+                <li><button class="nota" data-nota="4" type="button">4</button></li>
+                <li><button class="nota" data-nota="5" type="button">5</button></li>
+            </ul>
+            <button class="enviar" id="enviar" type="button">ENVIAR</button>
+        </div>
+
+        <div class="container-obrigado obrigado" id="obrigado">
+            <img src="./images/illustration-thank-you.svg" alt="Imagem de um celular">
+            <h3>Você selecionou <span id="nota"></span> de 5</h3>
+            <div>
+                <h2>Obrigado!</h2>
+                <p>Agradecemos por você dedicar seu tempo para nos dar uma avaliação. Se você precisar de mais suporte no futuro, não hesite em entrar em contato!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
